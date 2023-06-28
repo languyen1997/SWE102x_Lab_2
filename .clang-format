@@ -1,0 +1,5 @@
+# Based on: https://github.com/googleapis/google-cloud-cpp/blob/main/.clang-format
+BasedOnStyle: Google
+DerivePointerAlignment: false
+PointerAlignment: Right
+QualifierAlignment: Right

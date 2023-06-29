@@ -10,6 +10,13 @@ set(PROJECT_CXX_CFLAGS
   -Wall -Werror -Wextra -Wpedantic -Wold-style-cast
 )
 
-add_executable(AbstractFactory src/AbstractFactory.cpp)
-target_compile_options(AbstractFactory PRIVATE ${PROJECT_CXX_CFLAGS})
-set_target_properties(AbstractFactory PROPERTIES SUFFIX ".out")
+list(APPEND Patterns
+  AbstractFactory
+  Builder
+)
+
+foreach(pattern IN LISTS Patterns)
+  add_executable(${pattern} src/${pattern}.cpp)
+  target_compile_options(${pattern} PRIVATE ${PROJECT_CXX_CFLAGS})
+  set_target_properties(${pattern} PROPERTIES SUFFIX ".out")
+endforeach()

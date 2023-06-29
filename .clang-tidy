@@ -10,6 +10,7 @@ Checks: >
   portability-*,
   readability-*,
   -modernize-use-trailing-return-type,
+  -misc-non-private-member-variables-in-classes,
 
 WarningsAsErrors: "*"
 

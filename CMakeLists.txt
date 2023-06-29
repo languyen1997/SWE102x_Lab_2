@@ -15,6 +15,7 @@ list(APPEND Patterns
   Builder
   FactoryMethod
   Prototype
+  Singleton
 )
 
 foreach(pattern IN LISTS Patterns)

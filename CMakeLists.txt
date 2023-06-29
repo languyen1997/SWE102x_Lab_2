@@ -21,6 +21,7 @@ list(APPEND Patterns
   Adapter
   Bridge
   Composite
+  Decorator
 )
 
 foreach(pattern IN LISTS Patterns)

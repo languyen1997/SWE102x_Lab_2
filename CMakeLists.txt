@@ -17,6 +17,7 @@ list(APPEND Patterns
   Prototype
   Singleton
   Adapter
+  Bridge
 )
 
 foreach(pattern IN LISTS Patterns)

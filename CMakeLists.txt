@@ -13,6 +13,7 @@ set(PROJECT_CXX_CFLAGS
 list(APPEND Patterns
   AbstractFactory
   Builder
+  FactoryMethod
 )
 
 foreach(pattern IN LISTS Patterns)

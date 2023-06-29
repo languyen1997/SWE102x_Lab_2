@@ -14,6 +14,7 @@ list(APPEND Patterns
   AbstractFactory
   Builder
   FactoryMethod
+  Prototype
 )
 
 foreach(pattern IN LISTS Patterns)

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <memory>
 #include <string>
 
 class Implementation {
@@ -53,16 +54,14 @@ void ClientCode(Abstraction const &abstraction) {
 }
 
 int main() {
-  Implementation *implementation = new ConcreteImplementationA;
-  auto *abstraction = new Abstraction{implementation};
+  std::unique_ptr<Implementation> implementation =
+      std::make_unique<ConcreteImplementationA>();
+  std::unique_ptr<Abstraction> abstraction =
+      std::make_unique<Abstraction>(implementation.get());
   ClientCode(*abstraction);
   std::cout << std::endl;
-  delete implementation;
-  delete abstraction;
 
-  implementation = new ConcreteImplementationB;
-  abstraction = new ExtendedAbstraction{implementation};
+  implementation = std::make_unique<ConcreteImplementationB>();
+  abstraction = std::make_unique<ExtendedAbstraction>(implementation.get());
   ClientCode(*abstraction);
-  delete implementation;
-  delete abstraction;
 }

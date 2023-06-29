@@ -22,6 +22,7 @@ list(APPEND Patterns
   Bridge
   Composite
   Decorator
+  Facade
 )
 
 foreach(pattern IN LISTS Patterns)

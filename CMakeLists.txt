@@ -11,13 +11,16 @@ set(PROJECT_CXX_CFLAGS
 )
 
 list(APPEND Patterns
+  # Creational Patterns
   AbstractFactory
   Builder
   FactoryMethod
   Prototype
   Singleton
+  # Structural Patterns
   Adapter
   Bridge
+  Composite
 )
 
 foreach(pattern IN LISTS Patterns)

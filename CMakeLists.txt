@@ -16,6 +16,7 @@ list(APPEND Patterns
   FactoryMethod
   Prototype
   Singleton
+  Adapter
 )
 
 foreach(pattern IN LISTS Patterns)

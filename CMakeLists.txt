@@ -27,6 +27,7 @@ list(APPEND Patterns
   Proxy
   # Behavioral Patterns
   ChainOfResponsibility
+  Command
 )
 
 foreach(pattern IN LISTS Patterns)

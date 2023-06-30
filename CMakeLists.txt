@@ -25,6 +25,8 @@ list(APPEND Patterns
   Facade
   Flyweight
   Proxy
+  # Behavioral Patterns
+  ChainOfResponsibility
 )
 
 foreach(pattern IN LISTS Patterns)

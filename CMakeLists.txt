@@ -29,6 +29,7 @@ list(APPEND Patterns
   ChainOfResponsibility
   Command
   Iterator
+  Mediator
 )
 
 foreach(pattern IN LISTS Patterns)

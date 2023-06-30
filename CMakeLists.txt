@@ -32,6 +32,7 @@ list(APPEND Patterns
   Mediator
   Memento
   Observer
+  State
 )
 
 foreach(pattern IN LISTS Patterns)

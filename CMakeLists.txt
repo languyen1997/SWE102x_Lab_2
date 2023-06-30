@@ -34,6 +34,7 @@ list(APPEND Patterns
   Observer
   State
   Strategy
+  TemplateMethod
 )
 
 foreach(pattern IN LISTS Patterns)

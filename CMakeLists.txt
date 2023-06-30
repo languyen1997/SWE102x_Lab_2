@@ -35,6 +35,7 @@ list(APPEND Patterns
   State
   Strategy
   TemplateMethod
+  Visitor
 )
 
 foreach(pattern IN LISTS Patterns)

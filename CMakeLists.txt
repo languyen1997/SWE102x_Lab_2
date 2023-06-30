@@ -28,6 +28,7 @@ list(APPEND Patterns
   # Behavioral Patterns
   ChainOfResponsibility
   Command
+  Iterator
 )
 
 foreach(pattern IN LISTS Patterns)

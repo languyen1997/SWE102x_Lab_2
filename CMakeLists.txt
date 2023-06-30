@@ -33,6 +33,7 @@ list(APPEND Patterns
   Memento
   Observer
   State
+  Strategy
 )
 
 foreach(pattern IN LISTS Patterns)

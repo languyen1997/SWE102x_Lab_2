@@ -23,6 +23,7 @@ list(APPEND Patterns
   Composite
   Decorator
   Facade
+  Flyweight
 )
 
 foreach(pattern IN LISTS Patterns)

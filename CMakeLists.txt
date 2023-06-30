@@ -24,6 +24,7 @@ list(APPEND Patterns
   Decorator
   Facade
   Flyweight
+  Proxy
 )
 
 foreach(pattern IN LISTS Patterns)

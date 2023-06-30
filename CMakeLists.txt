@@ -30,6 +30,7 @@ list(APPEND Patterns
   Command
   Iterator
   Mediator
+  Memento
 )
 
 foreach(pattern IN LISTS Patterns)

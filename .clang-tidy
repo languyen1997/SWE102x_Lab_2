@@ -11,9 +11,11 @@ Checks: >
   readability-*,
   -modernize-use-trailing-return-type,
   -misc-non-private-member-variables-in-classes,
+  -misc-no-recursion,
   -readability-magic-numbers,
   -readability-convert-member-functions-to-static,
   -bugprone-easily-swappable-parameters,
+  -modernize-avoid-c-arrays,
 
 WarningsAsErrors: "*"
 

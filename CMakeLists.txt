@@ -31,6 +31,7 @@ list(APPEND Patterns
   Iterator
   Mediator
   Memento
+  Observer
 )
 
 foreach(pattern IN LISTS Patterns)
